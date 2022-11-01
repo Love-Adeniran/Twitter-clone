@@ -1,0 +1,10 @@
+/* .grey{
+    background-color: rgb(67, 67, 67);
+} */
+.black{
+    background-color: #000000;
+}
+.align-end{
+    /* justify-content: end; */
+    /* align-items: flex-end; */
+}
