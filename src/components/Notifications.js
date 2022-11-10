@@ -1,11 +1,10 @@
 import React from 'react'
-import Sidenav from './Sidenav'
 
 function Notifications() {
   return (
     <>
-        <div className="container black">
-            <div className="row border-end">
+        <div className="col-10 black">
+            <div className="row border-start p-3">
                 {/* <div className="col-3 ">
                     <Sidenav/>
                 </div> */}
@@ -15,7 +14,7 @@ function Notifications() {
                     <p>No Notification available!</p>
                     <hr />
                 </div>
-                <div className="col-3 border-start p-2 ms-5">
+                <div className="col-5 border-start pt-2 ps-5 ms-5 border-start">
                     <input type="text" className="form-control rounded-pill bg-dark w-100 text-light mb-4"/>
                     <div className='text-light rounded my-2 p-2 bg-dark'>
                         <h3>Trends For You</h3>

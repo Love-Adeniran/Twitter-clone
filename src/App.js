@@ -10,25 +10,29 @@ import More from './components/More';
 import Notifications from './components/Notifications';
 import Main from './components/Main';
 
+import LandingPage from './components/LandingPage';
+import { UserGuard } from './guards/userGuard';
+
 function App() {
   return (
     <>
     <Router >
-        {/* <Sidenav/> */}
         <Routes>
-            <Route path='/' element={<Main/>} children={
+            <Route path='/' element={<LandingPage/>}/>
+            <Route path='/' element={<UserGuard/>} children={
                 [
                     <Route path='/home' element={<Homepage/>}/>,
                     <Route path='/communities' element={<Communities/>}/>,
                     <Route path='/explore' element={<Explore/>}/>,
                     <Route path='/notifications' element={<Notifications/>}/>,
                     <Route path='/msgs' element={<Messages/>}/>,
-                    <Route path='/profile' element={<Profile/>}/>
+                    <Route path='/profile/:firstname' element={<Profile/>}/>,
+                    <Route path='/more' element={<More/>}/>
                 ]
             } />
         
             
-            <Route path='/more' element={<More/>}/>
+            
         </Routes>
     </Router>
     </>

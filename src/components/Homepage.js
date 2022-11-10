@@ -3,10 +3,10 @@ import React from 'react'
 const Homepage = () => {
   return (
     <>
-        <div className="container w-75 black m-0">
-            <div className="row p-2">
-                <div className='align-end'></div>
-                <div className="col-5 text-light p-2 m-2">
+        <div className=" black  border-start col-10 ">
+            <div className="row ">
+                {/* <div className=''></div> */}
+                <div className="col-6 text-light p-2 m-2">
                     <h4 className='text-light m-2'>Home</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, iste! Exercitationem praesentium beatae fuga. A ab hic nostrum, soluta harum autem sit sunt tenetur eos, quidem voluptatibus maxime nisi incidunt.</p>
                     {/* <div className='bg-primary rounded-circle d-inline p-4 my-4'></div> */}
@@ -24,7 +24,7 @@ const Homepage = () => {
                     <h4>About Us</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quae quaerat, officiis consequuntur maxime tempore? Mollitia sed repudiandae eius omnis cupiditate vero aut a facilis veritatis, fugiat vel, harum officiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsum voluptatum fuga nostrum repellendus? Doloremque mollitia quidem praesentium in exercitationem repudiandae modi delectus, a accusantium corporis quos aspernatur, nam saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora corrupti laudantium dolore deleniti eligendi autem incidunt unde distinctio quo quibusdam aperiam, omnis rem quos dignissimos est atque. Commodi, culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur quaerat deserunt necessitatibus fugiat molestias ut, placeat at minima, laborum pariatur optio incidunt, dolorum consectetur eaque. Corporis magnam provident cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure cum tempore pariatur corrupti magnam eum quia eius provident. Architecto natus quos iusto labore laboriosam praesentium saepe aut tenetur ipsam!</p>
                 </div>
-                <div className="col-4 border-start p-2 ">
+                <div className="col-5 border-start ps-5 pt-3 ">
                     <input type="text" className="form-control rounded-pill bg-dark w-100 text-light mb-4"/>
                     <div className='text-light rounded my-2 p-2 bg-dark'>
                         <h3>Trends For You</h3>

@@ -5,7 +5,7 @@ import Sidenav from './Sidenav'
 function Main() {
   return (
     
-    <div>
+    <div className='row container-fluid m-0 p-0'>
         <Sidenav /> <Outlet />
     </div>
   )

@@ -1,15 +1,12 @@
 import React from 'react'
-import Sidenav from './Sidenav'
 
 const Communities = () => {
   return (
     <>
-        <div className="container border black">
+        <div className="col-10 border-start black ">
             <div className="row border border-end">
-                {/* <div className="col-3 border">
-                    <Sidenav/>
-                </div> */}
-                <div className="col-5 text-light">
+               
+                <div className="col-6 text-light p-2 m-2">
                     <h2 className='text-light'>Communities</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis eum voluptatum minima quae quibusdam sequi, aperiam minus saepe eaque dolor neque laborum deserunt ipsam, aut debitis maiores esse accusamus. Laborum!</p>
                     <hr />
@@ -20,7 +17,7 @@ const Communities = () => {
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias assumenda tempore voluptates. Perferendis ut expedita, sit veniam molestias, animi aut quo, dolorem similique inventore sunt consectetur. Molestiae natus harum tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, molestiae. Molestiae facilis voluptatibus pariatur, harum aliquid voluptate dicta, voluptas velit corrupti repellat repellendus dignissimos alias, quis earum eos atque labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum eum, explicabo corrupti nostrum deserunt minus placeat, quisquam eos maxime dignissimos praesentium! Veritatis optio quisquam ratione velit amet dolorem tenetur!</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt maxime nostrum amet culpa nam consectetur praesentium, velit suscipit debitis doloribus obcaecati, provident saepe in excepturi, eligendi quas vel unde inventore.</p>
                 </div>
-                <div className="col-3 border-start p-2 ms-5">
+                <div className="col-5 border-start pt-2 ps-5 ms-5">
                     <input type="text" className="form-control rounded-pill bg-dark w-100 text-light mb-4"/>
                     <div className='text-light rounded my-2 p-2 bg-dark'>
                         <h3>Trends For You</h3>

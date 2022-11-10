@@ -1,53 +1,90 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import pic from '../assets/my-img.jpeg'
 
 const Sidenav = () => {
-    // const image = '../asset/my-img.jpeg'
+   let navigate = useNavigate()
+    const logOut=() =>{
+        localStorage.login = JSON.stringify(false)
+        alert('Click Ok to LogOut')
+        navigate('/')
+    }
   return (
     <>
-        <nav className="col-2  p-3 ps-4 black">
-            <div className='border-rounded'>
-                <i className='fa fa-twitter text-light fs-1'></i>
+        <nav className="col-2  pt-3 ps-4 black me-0 ">
+            <div className='p-1'>
+                <div className='border-light rounded'>
+                    <i className='fa fa-twitter text-light fs-1'></i>
                 </div>
-            <div className='row'>
-                {/* <div className='col m-0 p-0'>
-                <i className='fa-solid fa-house-user text-light fs-1'></i>
-                </div> */}
-                <div className='col'>
-                    <h4 className="my-2 border-dark border p-2 rounded-pill">
-                        {/* <i className='fa-solid fa-house-user text-light fs-1'></i> */}
-                        <Link to="/home" className='text-decoration-none text-light'>Home</Link>
-                    </h4>
+            {/* <div className='row'> */}
+                <div >
+                    <Link to="/home" className='text-decoration-none text-light '>
+                        
+                        <h4 className="my-2 border-dark border rounded-pill btn text-light px-4">
+                            <span className='me-3'>
+                            <i className='fa fa-home text-light fs-4'></i>
+                        </span>Home</h4>
+                    </Link>
+                    
                 </div>
-            </div>
-            <h4 className="my-2 border-dark border p-2 rounded-pill">
-                <Link to="/explore" className='text-decoration-none text-light'>Explore</Link>
-            </h4>
-            <h4 className="my-2 border-dark border p-2 rounded-pill">
-                <Link to="/communities" className='text-decoration-none text-light'>Communities</Link>
-            </h4>
-            <h4 className="my-2 border-dark border p-2 rounded-pill">
-                <Link to="/notifications" className='text-decoration-none text-light'>Notifications</Link>
-            </h4>
-            <h4 className="my-2 border-dark border p-2 rounded-pill">
-                <Link to="/msgs" className='text-decoration-none text-light'>Messages</Link>
-            </h4>
-            <h4 className="my-2 border-dark border p-2 rounded-pill">
-                <Link to="/profile" className='text-decoration-none text-light'>Profile</Link>
-            </h4>
-            <h4 className="my-2 border-dark border p-2 rounded-pill">
-                <Link to="/more" className='text-decoration-none text-light'>More</Link>
-            </h4>
-            <div className='my-2 mb-3'>
-                <button className='btn btn-info rounded-pill border-0 p-2 w-100 text-light fs-3'>Tweet</button>
-            </div>
-            <div className='border border-1 rounded-pill my-2 text-light p-2 mt-4'>
-                <div>
-                    <img src={pic} alt="me" width={50} className="rounded-pill"/>
+            {/* </div> */}
+                <div className='m-0 p-0'>
+                    <Link to="/explore" className='text-decoration-none text-light'>
+                        <h4 className="my-2 border-dark border rounded-pill btn text-light px-4">Explore</h4>
+                    </Link>
                 </div>
-                Name
+            
+                <div className='m-0 p-0'>
+                    <Link to="/communities" className='text-decoration-none text-light '>
+                        <h4 className="my-2 border-dark border rounded-pill btn text-light px-4"> <span className='me-3'>
+                            <i className=" fa fa-group text-light"></i>
+                        </span>Communities</h4>
+                    </Link>
+                </div>
+                <div className='m-0 p-0'>
+                    <Link to="/notifications" className='text-decoration-none text-light '> 
+                        <h4 className="my-2 border-dark border rounded-pill btn text-light px-4">
+                            <span className='me-3'>
+                                <i className=" fa fa-bell text-light"></i>
+                            </span>Notifications</h4>
+                    </Link>
+                </div>
+            
+                <div className='m-0 p-0'>
+                    <Link to="/msgs" className='text-decoration-none text-light '>
+                        <h4 className="my-2 border-dark border p-2 rounded-pill btn text-light px-4">
+                            <span className='me-3'>
+                            <i className=" fa fa-envelope text-light"></i>
+                        </span>Messages</h4>
+                    </Link>
+                </div>
 
+                <div className='m-0 p-0'>
+                    <Link to="/profile/:firstname" className='text-decoration-none text-light '>
+                        <h4 className="my-2 border-dark border p-2 rounded-pill btn text-light px-4">Profile</h4>
+                    </Link>
+                </div>
+            
+                <div className='m-0 p-0'>
+                    <Link to="/more" className='text-decoration-none text-light'>
+                        <h4 className="my-2 border-dark border rounded-pill btn text-light mb-0 px-4">More</h4>
+                    </Link>
+                </div>
+                
+            
+                <div className='my-2 mb-3'>
+                    <button className='btn btn-info rounded-pill border-0   text-light fs-5'>Tweet</button>
+                </div>
+                {/* <div className='border border-1 rounded-pill my-2 text-light mt-4'> */}
+                    <div>
+                        <img src={pic} alt="me" width={50} className="rounded-circle "/>
+                    </div>
+                    Name
+
+                {/* </div> */}
+                <div>
+                    <button className='btn btn-primary' onClick={logOut}>Log Out</button>
+                </div>
             </div>
         </nav>
     </>
