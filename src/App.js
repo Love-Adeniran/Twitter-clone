@@ -8,10 +8,11 @@ import Messages from './components/Messages';
 import Profile from './components/Profile';
 import More from './components/More';
 import Notifications from './components/Notifications';
-import Main from './components/Main';
+// import Main from './components/Main';
 
 import LandingPage from './components/LandingPage';
 import { UserGuard } from './guards/userGuard';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
                     <Route path='/more' element={<More/>}/>
                 ]
             } />
+            <Route path='*' element={<Error/>}/>
         
             
             

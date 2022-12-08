@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import pic from '../assets/my-img.jpeg'
 
@@ -9,6 +9,13 @@ const Sidenav = () => {
         alert('Click Ok to LogOut')
         navigate('/')
     }
+    useEffect(() => {
+        const getLocalDetails = JSON.parse(localStorage.details)
+        console.log(getLocalDetails);
+        
+    }, [])
+    
+    
   return (
     <>
         <nav className="col-2  pt-3 ps-4 black me-0 ">
@@ -59,11 +66,11 @@ const Sidenav = () => {
                     </Link>
                 </div>
 
-                <div className='m-0 p-0'>
-                    <Link to="/profile/:firstname" className='text-decoration-none text-light '>
+                {/* <div className='m-0 p-0'>
+                    <Link to={"/profile/"+} className='text-decoration-none text-light '>
                         <h4 className="my-2 border-dark border p-2 rounded-pill btn text-light px-4">Profile</h4>
                     </Link>
-                </div>
+                </div> */}
             
                 <div className='m-0 p-0'>
                     <Link to="/more" className='text-decoration-none text-light'>

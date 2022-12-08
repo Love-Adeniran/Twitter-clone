@@ -7,3 +7,10 @@
 .landingImage{
     background-image: url(./images/alexander-shatov-SXfwXS0jWNg-unsplash\ \(1\).jpg);
 }
+.box{
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #b8b8b8,
+                inset -8px -8px 16px #ffffff;
+
+}

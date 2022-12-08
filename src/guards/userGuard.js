@@ -4,12 +4,11 @@ import { Navigate } from 'react-router-dom'
 import Main from '../components/Main'
 
 export const UserGuard = () => {
-    const login = JSON.parse(localStorage.login)
-    if(login){
-        return <Main/>
-    }
-    else{
-        return <Navigate to='/'/>
-    }
-  
+  const login = JSON.parse(localStorage.login)
+  if (login) {
+    return <Main />
+  } else {
+    // return <Main />
+    return <Navigate to='/'/>
+  }
 }

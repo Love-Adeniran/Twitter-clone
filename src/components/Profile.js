@@ -12,7 +12,7 @@ function Profile() {
             <div className="row  border-start p-2">
               
                 <div className="col-6 text-light ">
-                    <h2 className='text-light'>Profile</h2>
+                    <h2 className='text-light'>{user.firstname}</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, magnam ut molestiae rerum dignissimos non quisquam adipisci accusamus distinctio facilis nihil magni ad sunt culpa harum vel, aut provident rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestias in quibusdam, dicta, inventore nesciunt suscipit facilis quos, corrupti fugit asperiores minima! Nihil consectetur quae aliquid laudantium mollitia minima dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore illum aut quam, nobis harum quae molestiae itaque magni. Commodi doloribus officiis enim tempore officia in, veniam minus quae omnis consequatur.</p>
                     <hr />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea asperiores ducimus dolores optio? Consectetur porro tempore veniam ullam, nihil voluptate veritatis libero repellat eos sint autem, aspernatur cumque, delectus temporibus?</p>
