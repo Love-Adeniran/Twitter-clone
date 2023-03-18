@@ -6,7 +6,8 @@ function Main() {
   return (
     
     <div className='row container-fluid m-0 p-0'>
-        <Sidenav /> <Outlet />
+        <Sidenav /> 
+        <Outlet />
     </div>
   )
 }
